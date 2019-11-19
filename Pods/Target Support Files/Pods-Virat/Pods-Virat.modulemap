@@ -1,0 +1,6 @@
+framework module Pods_Virat {
+  umbrella header "Pods-Virat-umbrella.h"
+
+  export *
+  module * { export * }
+}

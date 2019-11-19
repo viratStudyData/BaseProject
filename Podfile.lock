@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.8.2)
+  - IBAnimatable (6.0.0)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - IBAnimatable
+  - NVActivityIndicatorView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - IBAnimatable
+    - NVActivityIndicatorView
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  IBAnimatable: d49f9fee0c401b5b08d31b77256b77fb067e0e92
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+
+PODFILE CHECKSUM: f1f6351ee46df6f9140dc2e58ba089f20ede21a7
+
+COCOAPODS: 1.6.1
