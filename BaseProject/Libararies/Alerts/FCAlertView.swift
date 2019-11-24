@@ -12,6 +12,7 @@ public enum FCAlertType {
   case caution
   case success
   case warning
+    
 }
 
 open class FCAlertView: UIView {

@@ -8,19 +8,6 @@
 
 import UIKit
 
-//MARK: -----> Title Type
-enum TitleType : String{
-    case ok = "Ok"
-    case cancel = "Cancel"
-    case success = "Succsess"
-    case error  = "Error"
-    case alert = "Alert"
-
-    var localized: String {
-        return NSLocalizedString(self.rawValue, comment: "")
-    }
-}
-
 //MARK: -----> Alert Message
 enum AlertMessage : String{
     case firstName = "Please enter first name"

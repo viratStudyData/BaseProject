@@ -5,6 +5,19 @@ import UIKit
 typealias AlertBlock = (_ success: AlertTag) -> ()
 typealias buttonAction = (_ action: TitleType) -> ()
 
+//MARK: -----> Title Type
+enum TitleType : String{
+    case ok = "Ok"
+    case cancel = "Cancel"
+    case success = "Succsess"
+    case error  = "Error"
+    case alert = "Alert"
+    
+    var localized: String {
+        return NSLocalizedString(self.rawValue, comment: "")
+    }
+}
+
 enum AlertTag {
     case done
     case yes
@@ -30,7 +43,7 @@ class Alerts: NSObject {
             controller.addAction(action)
         }
         
-        controller.view.tintColor = tintColor ?? UIColor.theme
+        controller.view.tintColor = tintColor ?? UIColor.blue
         
         UIApplication.topViewController()?.present(controller, animated: true) { () -> Void in
         }

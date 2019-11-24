@@ -65,9 +65,9 @@ extension String {
         
     }
     
-    func toDate() -> Date {
+    func toDate(formate: String) -> Date {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = DateFormat.MM_yy.get()
+        dateFormatter.dateFormat = formate
         dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
         return dateFormatter.date(from:self)!
     }
@@ -211,11 +211,13 @@ extension UIApplication {
         if let nav = base as? UINavigationController {
             return topViewController(nav.visibleViewController)
         }
+        
         if let tab = base as? UITabBarController {
             if let selected = tab.selectedViewController {
                 return topViewController(selected)
             }
         }
+        
         if let presented = base?.presentedViewController {
             return topViewController(presented)
         }
